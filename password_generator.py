@@ -1,3 +1,5 @@
+#This was made following this tutorial: https://www.youtube.com/watch?v=XCIBOl3FTKo&ab_channel=TechWithTim
+
 import random
 import string
 
