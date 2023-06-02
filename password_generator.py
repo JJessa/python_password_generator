@@ -2,18 +2,19 @@ import random
 import string
 
 def generate_password(min_length, numbers=True, special_character=True): 
+#even if you don't pass this arguments(numbers and special_character) they are going to be in the password unless you specify False for not having them
     letters = string.ascii_letters
     digits = string.digits
     special = string.punctuation
     
-    characters = letters
+    characters = letters #we always are going to have letters
     if numbers:
-       characters += digits
+       characters += digits #numbers
     if special_character:
         characters += special
         
-        
-    pwd = ""
+    #now we add a new character to the password with a loop 
+    pwd = "" #we store the password here
     meets_criteria = False
     has_number = False
     has_special = False
