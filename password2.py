@@ -42,7 +42,7 @@ for i in range(minDigits):
 for i in range(minSpec):
     password += "".join(random.choice(secrets.choice(special)))
 
-
+#we take the remainig of the password length and choose randonly characters
 remaining = pwLen - minLower - minUpper - minDigits - minSpec
 
 
